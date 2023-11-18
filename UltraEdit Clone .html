@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+        .logo img{
+            width:164px ;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .right ul{
+            display: flex;
+            gap: 34px;
+        }
+        .right ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .cont{
+            display: grid;
+            grid-template-rows: minmax(100px,auto);
+            grid-template-columns: minmax(50px,auto);
+            grid-template-columns: repeat(auto-fill,1fr);
+        }
+        .section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+            margin: 70px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .section span{
+            font-size: 40px;
+        }
+        .button{
+            background-color: rgb(86, 204, 240);
+            border-radius: 10px;
+            padding: 20px;
+            color: aliceblue;
+            font-size: 20px;
+            border: none;
+            font-weight: 700;
+            margin: 12px 0;
+            cursor: pointer;
+        }
+        .green{
+            background-color: rgb(85, 169, 85);
+        }
+        .section span img{
+            width: 80px;
+            margin: 0 40px;
+        }
+        .section div{
+            font-size: 24px;
+            width: 49vw;
+           font-family: Arial, Helvetica, sans-serif;
+           text-align: center;
+        }
+        .section2{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .flex{
+            display: flex;
+        }
+        .small{
+            font-size: 22px;
+        }
+        .item{
+            padding: 34px;
+            background-color: rgb(229, 229, 229);
+            border-radius: 12px;
+            font-size: 43px;text-align: center;
+        }
+            @media screen and (max-width:1145px) {
+                .grid{
+            grid-template-columns: 1fr;
+
+        }
+            }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .itemlan{
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 55px;
+        }
+        .download :nth-child(2){
+            font-size: 35px;
+        }
+        .download{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-family: 'Times New Roman', Times, serif; 
+        }
+        .button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Pricing</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Resources</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>About Us</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                        <li>
+                            <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></div>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <section class="section">
+        <span>
+            Download <b>UltraEdit</b> for Windows<img width="34"
+                    src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="">
+        </span>
+        <div>Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+            text editor.</div>
+        <div>
+            <button class="button">
+                DOWNLOAD MAC OR LINUX VERSION
+            </button>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="download">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png" alt="">
+            <span>Download UltraEdit</span>
+            <span class="small">v2023.1(released 08/16/2023) | Hotfix</span>
+        </div>
+
+        <div class="grid">
+            <div class="item">
+                <div class="itemlan">English</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">Deutsch</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">Italiano</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">Español</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">français</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">Português brasileiro</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">日本</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">한국어</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">中国</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+            <div class="item">
+                <div class="itemlan">中國</div>
+                <button class="button blue"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 32-Bit</a></button>
+                <button class="button green"><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/">Download 64-Bit</a></button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
